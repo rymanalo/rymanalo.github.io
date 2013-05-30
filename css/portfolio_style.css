@@ -99,6 +99,17 @@ h3 {
   width: 300px;
 }
 
+#eargasm-container p, #goodfood-container p {
+  position: absolute;
+  top: 1350px;
+}
+
+#controls {
+  position: absolute;
+  top: 1325px;
+}
+
+
 #eargasm-info, #goodfood-info {
   display:none;
   font-size: 16px;
