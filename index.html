@@ -40,7 +40,10 @@
             </div>
 
             <div class="col4" id="profile">
-              <a href="#"><img src="./images/profile_pic.png" id="profile-pic"/></a>
+              <a href="#">
+                <img src="./images/profile_pic.png" class="profile-pic" id="profile-pic1"/>
+                <img src="./images/profile_pic2.png" class="profile-pic" id="profile-pic2"/>
+              </a>
               <div class="social">
                   <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a>
                   <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a>
@@ -163,23 +166,25 @@
           $('html, body').animate({scrollTop:$('#contact').position().top - 40}, 1000);
         });
 
-        $('#eargasm-container').hover(function () {
-        $("#eargasm-info").show("slide", { direction: "left" }, 1000);
-        },
-        function () {
-        $("#eargasm-info").hide("slide", { direction: "left" }, 100);
-        });
+        // $('#eargasm-container').hover(function () {
+        // $("#eargasm-info").show("slide", { direction: "left" }, 1000);
+        // },
+        // function () {
+        // $("#eargasm-info").hide("slide", { direction: "left" }, 100);
+        // });
 
-        $('#goodfood-container').hover(function () {
-        $("#goodfood-info").show("slide", { direction: "right" }, 1000);
-        },
-        function () {
-        $("#goodfood-info").hide("slide", { direction: "right" }, 100);
-        });
+        // $('#goodfood-container').hover(function () {
+        // $("#goodfood-info").show("slide", { direction: "right" }, 1000);
+        // },
+        // function () {
+        // $("#goodfood-info").hide("slide", { direction: "right" }, 100);
+        // });
 
-        $('#profile-pic').click(function () {
-        $("#thought-left").show("slide", { direction: "right" }, 1000);
-        $("#thought-right").show("slide", { direction: "left" }, 1000);
+        $('.profile-pic').click(function () {
+          $('#profile-pic2').hide();
+          $('#profile-pic1').show();
+          $("#thought-left").show("slide", { direction: "right" }, 1000);
+          $("#thought-right").show("slide", { direction: "left" }, 1000);
         });
 
 

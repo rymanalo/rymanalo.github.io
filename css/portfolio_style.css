@@ -38,7 +38,7 @@ h3 {
   padding-top: 80px;
 }
 
-#profile-pic {
+.profile-pic {
   height: auto;
   width: auto;
   border-radius: 20px;
@@ -47,6 +47,11 @@ h3 {
   padding-top: 150px;
   opacity: .9;
 }
+
+#profile-pic1 {
+  display: none;
+}
+
 #profile-text {
   font-size: 16px;
   padding-top: 10px;
@@ -73,10 +78,14 @@ h3 {
   text-align: center;
 }
 #project-infos p {
-  display: none;
   font-size: 20px;
   padding-right: 10px;
   padding-left: 0;
+  color:#0754ff;
+}
+
+#eargasm-info, #goodfood-info {
+
 }
 
 #controls {
@@ -97,6 +106,7 @@ h3 {
   position: absolute;
   height:300px;
   width: 300px;
+  border-radius: 3%;
 }
 
 #eargasm-container p, #goodfood-container p {
@@ -110,8 +120,7 @@ h3 {
 }
 
 
-#eargasm-info, #goodfood-info {
-  display:none;
-  font-size: 16px;
-  color:#0754ff;
+button {
+  font-weight: bold;
+  color:red;
 }
