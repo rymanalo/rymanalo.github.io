@@ -2,13 +2,13 @@
   var timer;
 
 
-  function fadeAll() {
+  function fadeAllEargasm() {
     for(var i = 0; i <= (eargasm_images.length - 1); i+=1) {
       eargasm_images[i].style.opacity = 0;
     }
   }
 
-  function fadeNext() {
+  function fadeNextEargasm() {
     if (parseFloat(eargasm_images[0].style.opacity, 10) > 0) {
       eargasm_images[0].style.opacity = (eargasm_images[0].style.opacity*10 - 1)/10;
     }
@@ -17,7 +17,7 @@
     }
   }
 
-  function fadePrevious() {
+  function fadePreviousEargasm() {
     if (parseFloat(eargasm_images[0].style.opacity, 10) > 0) {
       eargasm_images[0].style.opacity = (eargasm_images[0].style.opacity*10 - 1)/10;
     }
@@ -26,31 +26,31 @@
     }
   }
 
-  function shiftImagesForward() {
+  function shiftImagesForwardEargasm() {
     shifted = eargasm_images.shift();
     eargasm_images.push(shifted);
   }
 
-  function popImagesBacwards() {
+  function popImagesBackwardsEargasm() {
     popped = eargasm_images.pop();
     eargasm_images.unshift(popped);
   }
 
-  function stop() {clearInterval(timer);}
+  function stopEargasm() {clearInterval(timer);}
 
   function nextEargasm() {
-    timer = setInterval(fadeNext, 100);
-    setTimeout(stop, 1100);
-    setTimeout(shiftImagesForward, 1101);
-    setTimeout(stop, 1102);
+    timer = setInterval(fadeNextEargasm, 100);
+    setTimeout(stopEargasm, 1100);
+    setTimeout(shiftImagesForwardEargasm, 1101);
+    setTimeout(stopEargasm, 1102);
   }
 
   function previousEargasm() {
-    timer = setInterval(fadePrevious, 100);
-    setTimeout(stop, 1100);
-    setTimeout(popImagesBacwards, 1101);
-    setTimeout(stop, 1102);
+    timer = setInterval(fadePreviousEargasm, 100);
+    setTimeout(stopEargasm, 1100);
+    setTimeout(popImagesBackwardsEargasm, 1101);
+    setTimeout(stopEargasm, 1102);
   }
 
-  fadeAll();
+  fadeAllEargasm();
   eargasm_images[0].style.opacity = 1.0;

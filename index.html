@@ -90,8 +90,15 @@
 
             <div class="col4 goodfood" id="goodfood-container">
               <a href="http://goodfoodwdi.herokuapp.com" target="_blank">
-                <img src="./images/good_food.png">
+                <img src="./images/good_food.png" class="goodfood-pic">
+                <img src="./images/goodfood1.png" class="goodfood-pic">
+                <img src="./images/goodfood2.png" class="goodfood-pic">
+                <img src="./images/goodfood3.png" class="goodfood-pic">
               </a>
+              <div id="controls">
+                <button onclick="previousGoodfood()">Previous</button>
+                <button onclick="nextGoodfood()">Next</button>
+              </div>
             </div>
           </div>
 
@@ -115,6 +122,7 @@
       </div>
     </div>
     <script src="./js/photo-carousel-eargasm.js"></script>
+    <script src="./js/photo-carousel-goodfood.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
