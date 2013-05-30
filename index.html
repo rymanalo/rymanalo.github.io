@@ -66,14 +66,14 @@
 
             <div class="col4 eargasm" id="eargasm-container">
               <a href="http://eargasm.herokuapp.com"  target="_blank">
-                <img src="./images/eargasm.png">
-                <img src="./images/eargasm1.png">
-                <img src="./images/eargasm2.png">
-                <img src="./images/eargasm3.png">
+                <img src="./images/eargasm.png" class="eargasm-pic">
+                <img src="./images/eargasm1.png" class="eargasm-pic">
+                <img src="./images/eargasm2.png" class="eargasm-pic">
+                <img src="./images/eargasm3.png" class="eargasm-pic">
               </a>
               <div id="controls">
-                <button onclick="previous()">Previous</button>
-                <button onclick="next()">Next</button>
+                <button onclick="previousEargasm()">Previous</button>
+                <button onclick="nextEargasm()">Next</button>
               </div>
             </div>
 
@@ -89,7 +89,9 @@
             </div>
 
             <div class="col4 goodfood" id="goodfood-container">
-              <a href="http://goodfoodwdi.herokuapp.com" target="_blank"><img src="./images/good_food.png"></a>
+              <a href="http://goodfoodwdi.herokuapp.com" target="_blank">
+                <img src="./images/good_food.png">
+              </a>
             </div>
           </div>
 
@@ -112,6 +114,7 @@
         </footer>
       </div>
     </div>
+    <script src="./js/photo-carousel-eargasm.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -147,62 +150,6 @@
         $("#thought-right").show("slide", { direction: "left" }, 1000);
         });
 
-        var images = Array.prototype.slice.call(document.getElementsByTagName('#eargasm-container img'));
-        var timer;
-
-
-        function fadeAll() {
-          for(var i = 0; i <= (images.length - 1); i+=1) {
-            images[i].style.opacity = 0;
-          }
-        }
-
-        function fadeNext() {
-          if (parseFloat(images[0].style.opacity, 10) > 0) {
-            images[0].style.opacity = (images[0].style.opacity*10 - 1)/10;
-          }
-          if (parseFloat(images[1].style.opacity, 10) < 1) {
-            images[1].style.opacity = (images[1].style.opacity*10 + 1)/10;
-          }
-        }
-
-        function fadePrevious() {
-          if (parseFloat(images[0].style.opacity, 10) > 0) {
-            images[0].style.opacity = (images[0].style.opacity*10 - 1)/10;
-          }
-          if (parseFloat(images[(images.length - 1)].style.opacity, 10) < 1) {
-            images[(images.length - 1)].style.opacity = (images[(images.length - 1)].style.opacity*10 + 1)/10;
-          }
-        }
-
-        function shiftImagesForward() {
-          shifted = images.shift();
-          images.push(shifted);
-        }
-
-        function popImagesBacwards() {
-          popped = images.pop();
-          images.unshift(popped);
-        }
-
-        function stop() {clearInterval(timer);}
-
-        function next() {
-          timer = setInterval(fadeNext, 100);
-          setTimeout(stop, 1100);
-          setTimeout(shiftImagesForward, 1101);
-          setTimeout(stop, 1102);
-        }
-
-        function previous() {
-          timer = setInterval(fadePrevious, 100);
-          setTimeout(stop, 1100);
-          setTimeout(popImagesBacwards, 1101);
-          setTimeout(stop, 1102);
-        }
-
-        fadeAll();
-        images[0].style.opacity = 1.0;
 
       });
     </script>
