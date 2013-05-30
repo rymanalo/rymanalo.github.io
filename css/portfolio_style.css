@@ -6,6 +6,10 @@ body {
   margin: auto;
 }
 
+h3 {
+  display: block;
+}
+
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
   float: none;
   display: inline-block;
@@ -52,6 +56,7 @@ body {
   padding: 0 0 300px 0;
   display: none;
   vertical-align:bottom;
+  height: 266px;
 }
 
 .social img {
@@ -85,19 +90,13 @@ body {
 
 #eargasm-container {
   float: left;
-  padding-left: 30px;
+
 }
 
-#eargasm-container img{
+#eargasm-container img, #goodfood-container img{
   position: absolute;
-  height:225px;
-  width: 220px;
-}
-
-#goodfood-container img{
-  position: absolute;
-  height:225px;
-  width: 220px;
+  height:300px;
+  width: 300px;
 }
 
 #eargasm-info, #goodfood-info {
