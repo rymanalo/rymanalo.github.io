@@ -10,6 +10,17 @@ h3 {
   display: block;
 }
 
+em {
+  color: #130abd;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#logo {
+  font-size: 50px;
+  line-height: 50px;
+}
+
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
   float: none;
   display: inline-block;
@@ -39,12 +50,9 @@ h3 {
 }
 
 .profile-pic {
-  height: auto;
-  width: auto;
-  border-radius: 20px;
   margin: auto;
   padding-bottom: 15px;
-  padding-top: 150px;
+  padding-top: 130px;
   opacity: .9;
 }
 
@@ -58,18 +66,27 @@ h3 {
 }
 
 #thought-right, #thought-left {
-  padding: 0 0 300px 0;
   display: none;
   vertical-align:bottom;
   height: 266px;
 }
 
 .social img {
-  width: 30px;
+  width: 50px;
   display: inline-block;
   margin: auto;
-  padding: 0 5px 0 5px;
+  padding: 5px;
   border-radius: 5px;
+}
+
+#email-icon {
+  width: 70px;
+  height: 70px;
+  margin: -10px;
+}
+
+.social p {
+  text-align: justify;
 }
 
 #project-infos {
@@ -95,10 +112,16 @@ h3 {
 
 #goodfood-container {
   float: right;
+  height: 400px;
+}
+
+#project-infos {
+  height: 400px;
 }
 
 #eargasm-container {
   float: left;
+  height: 400px;
 
 }
 
