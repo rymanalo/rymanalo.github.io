@@ -1,210 +1,196 @@
 <!doctype html>
 <html>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-
-
+    <!-- Bootstrap and Personal CSS -->
     <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/onepcssgrid/onepcssgrid.css">
-    <link rel="stylesheet" type="text/css" href="./css/portfolio_style.css">
+    <link rel="stylesheet" type="text/css" href="./css/portfolio_style2.css">
 
+    <!-- javascipt sources -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./css/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="onepcssgrid-1000">
+    <header>
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="brand">Ryan Manalo</div>
+          <ul class="nav">
+            <li ><a id="about-nav">About</a></li>
+            <li class="divider-vertical"></li>
+            <li><a id="projects-nav">Projects</a></li>
+            <li class="divider-vertical"></li>
+            <li><a id="interests-nav">Interests</a></li>
+            <li class="divider-vertical"></li>
+            <li><a id="contact-nav">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
+    <div id="about" class="content-container">
+      <h2>About</h2>
 
-        <header class="col12">
-
-          <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-              <div class="brand">Ryan Manalo</div>
-              <ul class="nav">
-                <li ><a id="about-nav">About</a></li>
-                <li class="divider-vertical"></li>
-                <li><a id="projects-nav">Projects</a></li>
-                <li class="divider-vertical"></li>
-<!--                 <li><a id="interests-nav">Interests</a></li> -->
-<!--                 <li class="divider-vertical"></li> -->
-                <li><a id="contact-nav">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </header>
-
-          <div class="col12 container" id="about">
-            <h3>About</h3>
-
-            <div class="col4 thought">
-              <img id="thought-left" src="./images/thought-left.png"/>
-            </div>
-
-
-            <div class="col4" id="profile">
-              <span id="logo"><p>Ryan <p>Manalo</span>
-              <a href="#">
-                <img src="./images/profile_pic.png" class="profile-pic" id="profile-pic1"/>
-                <img src="./images/profile_pic2.png" class="profile-pic" id="profile-pic2"/>
-              </a>
-            </div>
-
-            <div class="col4 thought">
-              <img id="thought-right" src="./images/thought-right.png"/>
-            </div>
-
-            <div class="col7" id="profile-text">
-              <p>
-                Hello! My name is Ryan Manalo. I graduated from UC Berkeley in May 2011 with a BA in Cognitive Science. After working for about a year in sales at the California Culinary Academy, I yearned for a change in my life towards a more fulfilling, passion-filled career. I was ecstatic to hear that I was accepted into General Assembly's Web Development Immersive Program. This page will give you a little taste of all that I have learned. Check out my projects and feel free to connect with me!
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="col12 container" id="projects">
-            <h3>Projects</h3>
-
-            <div class="col4 eargasm" id="eargasm-container">
-              <a href="http://eargasm.herokuapp.com"  target="_blank">
-                <div class="eargasm-pic">
-                  <img src="./images/eargasm.png">
-<!--                   <p>TESTING</p>
- -->                </div>
-                <div class="eargasm-pic">
-                  <img src="./images/eargasm1.png">
-<!--                   <p>ONE</p>
- -->                </div>
-                <div class="eargasm-pic">
-                  <img src="./images/eargasm2.png">
-<!--                   <p>TWO</p>
- -->                </div>
-                <div class="eargasm-pic">
-                  <img src="./images/eargasm3.png">
-<!--                   <p>THREE</p>
- -->                </div>
-              </a>
-              <div id="controls">
-                <button onclick="previousEargasm()"><</button>
-                <button onclick="nextEargasm()">></button>
-              </div>
-            </div>
-
-            <div class="col4" id="project-infos">
-              <p id="eargasm-info">
-                <em>Eargasm</em> compiles a biography, picture, and YouTube playlist of top tracks for any music artist you search for all in one page.
-              </p>
-              <br>
-              <p id="goodfood-info">
-                <em>GoodFood</em> is designed to be a mobile app that searches for and informs you of restaurants near you that have a Yelp rating of 4 stars or more.
-              </p>
-
-            </div>
-
-            <div class="col4 goodfood" id="goodfood-container">
-              <a href="http://goodfoodwdi.herokuapp.com" target="_blank">
-                <div class="goodfood-pic">
-                  <img src="./images/good_food.png">
-<!--                   <p>TESTING</p>
- -->                </div>
-                <div class="goodfood-pic">
-                  <img src="./images/goodfood1.png">
-<!--                   <p>ONE</p>
- -->                </div>
-                <div class="goodfood-pic">
-                  <img src="./images/goodfood2.png">
-<!--                   <p>TWO</p>
- -->                </div>
-                <div class="goodfood-pic">
-                  <img src="./images/goodfood3.png">
-<!--                   <p>THREE</p>
- -->                </div>
-              </a>
-              <div id="controls">
-                <button onclick="previousGoodfood()"><</button>
-                <button onclick="nextGoodfood()">></button>
-              </div>
-            </div>
-          </div>
-
-
-<!--           <div class="col12 container" id="interests">
-            <h3>Interests</h3>
-          </div> -->
-
-
-          <div class="col12 container" id="contact">
-            <h3>Contact</h3>
-
-            <div class="social">
-                <p>
-                  <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a>
-                  Let's be friends!
-                <p>
-                  <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a>
-                  Let's network!
-                <p>
-                  <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a>
-                  Fork me!
-                <p>
-                  <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a>
-                  Email me!
-            </div>
-
-          </div>
-
-
-
-
-
-        <footer>
-
-        </footer>
+      <div id="profile" >
+        <div>
+          <img id="thought-left" src="./images/thought-left.png"/>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./images/profile_pic.png" class="profile-pic" id="profile-pic1"/>
+            <img src="./images/profile_pic2.png" class="profile-pic" id="profile-pic2"/>
+          </a>
+        </div>
+        <div>
+          <img id="thought-right" src="./images/thought-right.png"/>
+        </div>
       </div>
 
-    <script src="./js/photo-carousel-eargasm.js"></script>
-    <script src="./js/photo-carousel-goodfood.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
+      <div id="profile-text" >
+        <p>
+          Hello! My name is Ryan Manalo. I graduated from UC Berkeley in May 2011 with a BA in Cognitive Science. After working for about a year in sales at the California Culinary Academy, I yearned for a change in my life towards a more fulfilling, passion-filled career. I was ecstatic to hear that I was accepted into General Assembly's Web Development Immersive Program. This page will give you a little taste of all that I have learned. Check out my projects and feel free to connect with me!
+        </p>
+      </div>
+    </div>
 
-        $("#about-nav").click(function() {
-          $('html, body').animate({scrollTop:$('#about').position().top - 40}, 1000);
-        });
-        $("#projects-nav").click(function() {
-          $('html, body').animate({scrollTop:$('#projects').position().top - 40}, 1000);
-        });
-        $("#interests-nav").click(function() {
-          $('html, body').animate({scrollTop:$('#interests').position().top - 40}, 1000);
-        });
-        $("#contact-nav").click(function() {
-          $('html, body').animate({scrollTop:$('#contact').position().top - 40}, 1000);
-        });
+    <div id="projects"  class="content-container">
+      <h2>Projects</h2>
 
-        // $('#eargasm-container').hover(function () {
-        // $("#eargasm-info").show("slide", { direction: "left" }, 1000);
-        // },
-        // function () {
-        // $("#eargasm-info").hide("slide", { direction: "left" }, 100);
-        // });
+      <div class="club1000-container">
+        <p class="project-info" >
+          <a href="http://club1000lb.herokuapp.com/" target="_blank"><em>Club 1000Lbs</em></a> is designed to be a mobile app that searches for and informs you of restaurants near you that have a Yelp rating of 4 stars or more.
+        </p>
 
-        // $('#goodfood-container').hover(function () {
-        // $("#goodfood-info").show("slide", { direction: "right" }, 1000);
-        // },
-        // function () {
-        // $("#goodfood-info").hide("slide", { direction: "right" }, 100);
-        // });
+        <div id="club1000-carousel" class="carousel project-caraousel" data-interval="">
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="#club1000-carousel" data-slide="next">
+                <img src="./images/club1000-laptop.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#club1000-carousel" data-slide="next">
+                <img src="./images/club1000-laptop1.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#club1000-carousel" data-slide="next">
+                <img src="./images/club1000-laptop2.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#club1000-carousel" data-slide="next">
+                <img src="./images/club1000-laptop3.png" alt="" /></a>
+            </div>
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div>
 
-        $('.profile-pic').click(function () {
-          $('#profile-pic2').hide();
-          $('#profile-pic1').show();
-          $("#thought-left").show("slide", { direction: "right" }, 1000);
-          $("#thought-right").show("slide", { direction: "left" }, 1000);
-        });
+      <div class="goodfood-container">
+        <p class="project-info" >
+          <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><em>GoodFood</em></a> is designed to be a mobile app that searches for and informs you of restaurants near you that have a Yelp rating of 4 stars or more.
+        </p>
+
+        <div id="goodfood-carousel" class="carousel project-caraousel" data-interval="">
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="#goodfood-carousel" data-slide="next">
+                <img src="./images/goodfood-phone.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#goodfood-carousel" data-slide="next">
+                <img src="./images/goodfood-phone1.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#goodfood-carousel" data-slide="next">
+                <img src="./images/goodfood-phone2.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#goodfood-carousel" data-slide="next">
+                <img src="./images/goodfood-phone3.png" alt="" /></a>
+            </div>
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div>
+
+      <div class="eargasm-container">
+        <p class="project-info" >
+          <a href="http://eargasm.herokuapp.com/" target="_blank"><em>Eargasm</em></a> compiles a biography, picture, and YouTube playlist of top tracks for any music artist you search for all in one page.
+        </p>
+
+        <div id="eargasm-carousel" class="carousel project-caraousel" data-interval="">
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="#eargasm-carousel" data-slide="next">
+                <img src="./images/eargasm-laptop.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#eargasm-carousel" data-slide="next">
+                <img src="./images/eargasm-laptop1.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#eargasm-carousel" data-slide="next">
+                <img src="./images/eargasm-laptop2.png" alt="" /></a>
+            </div>
+            <div class="item">
+              <a href="#eargasm-carousel" data-slide="next">
+                <img src="./images/eargasm-laptop3.png" alt="" /></a>
+            </div>
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div>
+    </div>
 
 
-      });
-    </script>
+
+    <div id="contact" class="content-container">
+      <h2>Contact</h2>
+
+      <div class="social">
+        <p>
+          <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a>
+          Let's be friends!
+        <p>
+          <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a>
+          Let's network!
+        <p>
+          <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a>
+          Fork me!
+        <p>
+          <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a>
+          Email me!
+      </div>
+    </div>
+
+
+
 
   </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+
+      $('.profile-pic').click(function () {
+        $('#profile-pic2').hide();
+        $('#profile-pic1').show();
+        if (document.width > 1040)
+          {
+          $("#thought-left").show("slide", { direction: "right" }, 1000);
+          $("#thought-right").show("slide", { direction: "left" }, 1000);
+          }
+        this.onclick=null;
+      });
+
+      $("#about-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#about').position().top - 40}, 1000);
+      });
+      $("#projects-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#projects').position().top - 40}, 1000);
+      });
+      $("#interests-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#interests').position().top - 40}, 1000);
+      });
+      $("#contact-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#contact').position().top - 40}, 1000);
+      });
+
+    });
+  </script>
 </html>
