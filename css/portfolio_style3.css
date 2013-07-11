@@ -1,0 +1,113 @@
+body {
+  padding-top: 75px;
+  background: #65a5d1;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+em {
+  color: #130abd;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h2 {
+  padding-bottom: 25px;
+  width: 100%;
+  display: block;
+  color: #0a64a4;
+}
+
+.navbar-inner {
+  background-color: #03406a;
+  background-image: none;
+}
+
+.navbar .brand {
+  color: #ff9000;
+  text-shadow: none;
+}
+
+/* ABOUT */
+
+#profile {
+  text-align: center;
+  width: 100%;
+}
+
+/*#profile img {
+  width: 300px;
+}*/
+
+#profile div {
+  display: inline-block;
+  position: relative;
+}
+
+#profile-text {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+#thought-right, #thought-left {
+  display: none;
+  vertical-align:bottom;
+}
+
+.profile-pic {
+  margin: auto;
+  padding-bottom: 15px;
+/*  padding-top: 130px;*/
+  opacity: .9;
+}
+
+#profile-pic2 {
+  display: none;
+}
+
+
+/* PROJECTS */
+.project-info {
+  width: 30%;
+  display:inline-block;
+  vertical-align: top;
+  padding-right: 75px;
+}
+
+.project-caraousel {
+  width: 50%;
+  height: auto;
+  display:inline-block;
+  border: 5px #000 solid;
+}
+
+
+
+/* CONTACT */
+.social img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#email-icon {
+  width: 70px;
+  height: 70px;
+  margin: -10px;
+}
+
+.social p {
+  text-align: center;
+}
+
+#pdf {
+  color: #130abd;
+  font-size: 16px;
+}

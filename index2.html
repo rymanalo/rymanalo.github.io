@@ -1,48 +1,62 @@
+<!doctype html>
 <html>
   <head>
+    <!-- Bootstrap and Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/portfolio_style2.css">
+
+    <!-- javascipt sources -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="./css/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/portfolio_style3.css">
   </head>
   <body>
-
-    <ul class="nav nav-tabs navbar navbar-fixed-top navbar-inner" id="myTab">
-      <li class="brand">Ryan Manalo</li>
-      <li class="active"><a href="#profile">About</a></li>
-      <li><a href="#messages">Projects</a></li>
-      <li><a href="#settings">Contact</a></li>
-    </ul>
-
-
-    <div class="tab-content">
-      <div class="tab-pane fade in active" id="profile">
-        <div id="profile" >
-          <h2>About</h2>
-<!--           <div>
-            <img id="thought-left" src="./images/thought-left.png"/>
-          </div> -->
-          <div>
-            <a href="#">
-              <img src="./images/profile_pic.png" class="profile-pic" id="profile-pic1"/>
-              <img src="./images/profile_pic2.png" class="profile-pic" id="profile-pic2"/>
-            </a>
-          </div>
-<!--           <div>
-            <img id="thought-right" src="./images/thought-right.png"/>
-          </div> -->
-        </div>
-
-        <div id="profile-text" >
-          <p>
-            Hello! My name is Ryan Manalo. I graduated from UC Berkeley in May 2011 with a BA in Cognitive Science. After working for about a year in sales at the California Culinary Academy, I yearned for a change in my life towards a more fulfilling, passion-filled career. I was ecstatic to hear that I was accepted into General Assembly's Web Development Immersive Program. This page will give you a little taste of all that I have learned. Check out my projects and feel free to connect with me!
-          </p>
+    <header>
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="brand">Ryan Manalo</div>
+          <ul class="nav">
+            <li ><a id="about-nav">About</a></li>
+            <li class="divider-vertical"></li>
+            <li><a id="projects-nav">Projects</a></li>
+            <li class="divider-vertical"></li>
+<!--             <li><a id="interests-nav">Interests</a></li>
+            <li class="divider-vertical"></li> -->
+            <li><a id="contact-nav">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="tab-pane fade in" id="messages">
-        <h2>Projects</h2>
-        <div class="club1000-container">
+    </header>
+
+    <div id="about" class="content-container">
+      <h2>About</h2>
+
+      <div id="profile" >
+        <div>
+          <img id="thought-left" src="./images/thought-left.png"/>
+        </div>
+        <div>
+          <a href="#">
+            <img src="./images/profile_pic.png" class="profile-pic" id="profile-pic1"/>
+            <img src="./images/profile_pic2.png" class="profile-pic" id="profile-pic2"/>
+          </a>
+        </div>
+        <div>
+          <img id="thought-right" src="./images/thought-right.png"/>
+        </div>
+      </div>
+
+      <div id="profile-text" >
+        <p>
+          Hello! My name is Ryan Manalo. I graduated from UC Berkeley in May 2011 with a BA in Cognitive Science. After working for about a year in sales at the California Culinary Academy, I yearned for a change in my life towards a more fulfilling, passion-filled career. I was ecstatic to hear that I was accepted into General Assembly's Web Development Immersive Program. This page will give you a little taste of all that I have learned. Check out my projects and feel free to connect with me!
+        </p>
+      </div>
+    </div>
+
+    <div id="projects"  class="content-container">
+      <h2>Projects</h2>
+
+      <div class="club1000-container">
         <p class="project-info" >
           <a href="http://club1000lb.herokuapp.com/" target="_blank"><em>Club 1000Lbs</em></a> is a weightlifting tracker app. Everyday you do a workout, you can input new data. You can see your progress as you try to reach Club 1000lbs.
         </p>
@@ -123,62 +137,62 @@
         </div><!-- /.carousel -->
       </div>
     </div>
-      <div class="tab-pane fade in " id="settings">
-        <h2>Contact</h2>
-        <div class="social">
-          <p>
-            <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a> <br/>
-            Let's be friends!
-          <p>
-            <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a> <br/>
-            Let's network!
-          <p>
-            <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a> <br/>
-            Fork me!
-          <p>
-            <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a> <br/>
-            Email me!
-          <p>
-            <a href="./RManalo_Resume.pdf" target="_blank"><span id="pdf">View/Download My Resume</span></a>
-        </div>
+
+
+
+    <div id="contact" class="content-container">
+      <h2>Contact</h2>
+
+      <div class="social">
+        <p>
+          <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a> <br/>
+          Let's be friends!
+        <p>
+          <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a> <br/>
+          Let's network!
+        <p>
+          <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a> <br/>
+          Fork me!
+        <p>
+          <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a> <br/>
+          Email me!
+        <p>
+          <a href="./RManalo_Resume.pdf" target="_blank"><span id="pdf">View/Download My Resume</span></a>
       </div>
     </div>
 
-    <script>
-      $(document).ready(function() {
 
 
-        $('.profile-pic').click(function () {
-          $('#profile-pic2').hide();
-          $('#profile-pic1').show();
-          if (document.width > 1040)
-            {
-            $("#thought-left").show("slide", { direction: "right" }, 1000);
-            $("#thought-right").show("slide", { direction: "left" }, 1000);
-            }
-          this.onclick=null;
-        });
 
-        $(function () {
-          $('#myTab a[href="#profile"]').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-          })
-        })
-        $(function () {
-          $('#myTab a[href="#messages"]').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-          })
-        })
-        $(function () {
-          $('#myTab a[href="#settings"]').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-          })
-        })
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+
+      $('.profile-pic').click(function () {
+        $('#profile-pic2').hide();
+        $('#profile-pic1').show();
+        if (document.width > 1040)
+          {
+          $("#thought-left").show("slide", { direction: "right" }, 1000);
+          $("#thought-right").show("slide", { direction: "left" }, 1000);
+          }
+        this.onclick=null;
       });
 
-    </script>
-  </body>
+      $("#about-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#about').position().top - 40}, 1000);
+      });
+      $("#projects-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#projects').position().top - 40}, 1000);
+      });
+      $("#interests-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#interests').position().top - 40}, 1000);
+      });
+      $("#contact-nav").click(function() {
+        $('html, body').animate({scrollTop:$('#contact').position().top - 40}, 1000);
+      });
+
+    });
+  </script>
 </html>
