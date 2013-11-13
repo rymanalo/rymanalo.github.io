@@ -12,6 +12,7 @@
       <li class="brand">Ryan Manalo</li>
       <li class="active"><a href="#profile">About</a></li>
       <li><a href="#messages">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#settings">Contact</a></li>
     </ul>
 
@@ -123,30 +124,33 @@
         </div><!-- /.carousel -->
       </div>
     </div>
-      <div class="tab-pane fade in " id="settings">
-        <h2>Contact</h2>
-        <div class="social">
-          <p>
-            <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a> <br/>
-            Let's be friends!
-          <p>
-            <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a> <br/>
-            Let's network!
-          <p>
-            <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a> <br/>
-            Fork me!
-          <p>
-            <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a> <br/>
-            Email me!
-          <p>
-            <a href="./RManalo_Resume.pdf" target="_blank"><span id="pdf">View/Download My Resume</span></a>
-        </div>
+    <div class="tab-pane fade in " id="blog">
+      <h2>Blog</h2>
+        <iframe src="http://rymanalo.wordpress.com" seamless  width="100%" height="100%" id="iframe1" marginheight="0" frameborder="0" onLoad="autoResize('iframe1');"></iframe>
+    </div>
+    <div class="tab-pane fade in " id="settings">
+      <h2>Contact</h2>
+      <div class="social">
+        <p>
+          <a href="https://www.facebook.com/rymanalo" target="_blank"><img src="./images/social_facebook.png" /></a> <br/>
+          Let's be friends!
+        <p>
+          <a href="https://www.linkedin.com/profile/view?id=58044028" target="_blank"><img src="./images/linkedin_button.jpg" /></a> <br/>
+          Let's network!
+        <p>
+          <a href="https://github.com/rymanalo" target="_blank"><img src="./images/baracktocat.jpg" /></a> <br/>
+          Fork me!
+        <p>
+          <a href="mailto:12manalo@gmail.com?Subject=Hello!" target="_blank"><img src="./images/email_icon.png" id="email-icon"/></a> <br/>
+          Email me!
+        <p>
+          <a href="./RManalo_Resume.pdf" target="_blank"><span id="pdf">View/Download My Resume</span></a>
       </div>
     </div>
+  </div>
 
     <script>
       $(document).ready(function() {
-
 
         $('.profile-pic').click(function () {
           $('#profile-pic2').hide();
@@ -177,6 +181,26 @@
             $(this).tab('show');
           })
         })
+        $(function () {
+          $('#myTab a[href="#blog"]').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+          })
+        })
+
+        function autoResize(id){
+            var newheight;
+            var newwidth;
+
+            if(document.getElementById){
+                newheight=document.getElementById(id).contentWindow.document.body.scrollHeight;
+                newwidth=document.getElementById(id).contentWindow.document.body.scrollWidth;
+            }
+
+            document.getElementById(id).height= (newheight) + "px";
+            document.getElementById(id).width= (newwidth) + "px";
+        }
+
       });
 
     </script>
